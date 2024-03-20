@@ -239,6 +239,7 @@ class AzureCloudInterface(CloudInterface):
             max_single_put_size=self.max_single_put_size,
             max_block_size=self.max_block_size,
             session=session,
+            max_chunk_get_size=1024*1024*32, #32Mb
         )
 
     @property
